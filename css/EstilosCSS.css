@@ -1,0 +1,411 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fuente/DancingScript-Regular.ttf);
+}
+
+body{
+	font-family: 'DancingScript', cursive;
+	background:  #02010a;
+}
+
+#contenido{
+	width: 900px;
+	margin: 0 auto;
+}
+
+
+/* PARA DESKTOOP */
+
+@media(min-width: 900px){
+	#contenido{
+		max-width: 900px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Estilo de Cabecera */
+
+	header{
+		font-size: 1em;
+		color: white;
+		background: #5b7989;
+		border-radius: 10px 10px 0 0;
+		overflow: hidden;
+		width: 100%;
+		height: 80px;
+		text-align: center;
+	}
+
+
+	header h1{
+		text-shadow: 2px 2px #02010a;
+		width: 50%;
+		float: left;
+		overflow: hidden;
+
+	}
+
+
+	#menu-principal a{
+		color: white;
+		font-size: 1.2em;
+	}
+
+	#menu-principal a:active, #menu-principal a:hover{
+		color: white;
+		font-size: 1.2em;
+		text-decoration: none;
+	}
+
+	.actual{
+		color: white;
+		font-size: 1.2em;
+		text-decoration: none;
+	}
+
+	#menu-principal ul{
+		list-style-type: none;
+		margin: 0 auto;
+		height: 100%;
+		overflow: hidden;
+		padding-top: 10px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-end;
+	}
+
+	#menu-principal li{
+		float: right;
+		display: block;
+		margin: 10px;
+		height: 100%;
+	}
+
+
+	/* Estilo del contenido */
+
+	#contenedor-img{
+		max-width: 900px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#img-central{
+		width: 900px;
+		margin: 0;
+		background-color: #82c3a6;
+		text-align: center;
+	}
+
+	#img-secundaria{
+		background-color:  #d5c75f;
+		width: 900px;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: no-wrap;
+	}
+
+	#img-central img{
+		margin: 15px;
+		border: 2px solid black;
+	}
+
+	#img-secundaria img{
+		margin: 0px;
+		border: 2px solid black;
+	}
+
+	.img-paisajes:hover{
+		transform: rotate(10deg);
+		border: 2px solid black;
+		box-shadow: 2px 2px #82c3a6;
+	}
+
+	.img-retratos:hover{
+		transform: translate(50px, 5px);
+		border: 2px solid black;
+		box-shadow: 2px 2px #82c3a6;
+	}
+
+	footer{
+		background-color: #C6d5c5;
+		border-radius: 0 0 10px 10px;
+		max-width: 900px;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: no-wrap;
+	}
+
+	footer #contacto{
+		width: 25%;
+		margin: 5px;
+	}
+
+	footer #terminos{
+		width: 25%;
+		margin: 5px;
+	}
+
+	footer #redes{
+		width: 30%;
+		margin: 5px;
+	}
+
+	footer #derechos{
+		width: 20%;
+		margin: 5px;
+	}
+
+	#redes ul{
+		list-style-position: inside;
+		vertical-align: bottom;
+	}
+
+	#redes #facebook{
+		list-style-image: url('../img/facebook.png');
+	}
+
+	#redes #twitter{
+		list-style-image: url('../img/twitter.png');
+	}
+
+	#redes #instagram{
+		list-style-image: url('../img/instagram.png');
+	}
+
+	/* PAISAJES */
+
+	#contenedor-img-paisajesretratos{
+		background-color:  #d5c75f;
+		max-width: 900px;
+		text-align: center;
+		margin: 0;
+		padding: 25px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#img-paisajes-retratos img:nth-child(1){
+		-webkit-filter: blur(10px);
+	}
+
+	#img-paisajes-retratos img:nth-child(2){
+		-webkit-filter: grayscale(100%);
+	}
+
+	#img-paisajes-retratos img:nth-child(3){
+		-webkit-filter: sepia(90%);
+	}
+
+	#img-paisajes-retratos img:nth-child(4){
+		-webkit-filter: grayscale(100%);
+	}
+
+	#img-paisajes-retratos img:nth-child(6){
+		-webkit-filter: grayscale(100%);
+	}
+
+}
+
+
+
+
+
+/* PARA MOVILES */
+
+@media(max-width: 900px){
+	#contenido{
+		width: 100%;
+	}
+
+	/* Estilo de Cabecera */
+
+	header{
+		font-size: 1em;
+		color: white;
+		background: #5b7989;
+		border-radius: 10px 10px 0 0;
+		overflow: hidden;
+		max-width: 100%;
+		height: 200px;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	header h1{
+		text-shadow: 2px 2px #02010a;
+		max-width: 100%;
+		float: left;
+		overflow: hidden;
+	}
+
+	#menu-principal a{
+		color: white;
+		font-size: 1.2em;
+		text-decoration: underline;
+	}
+
+	#menu-principal ul{
+		list-style-type: none;
+		margin: 0 auto;
+		height: 100%;
+		overflow: hidden;
+		padding-top: 10px;
+		display: flex;
+	}
+
+	#menu-principal li{
+		float: right;
+		display: block;
+		margin: 10px;
+		height: 100%;
+	}
+
+
+	/* Estilo del contenido */
+
+	#contenedor-img{
+		display: flex;
+		max-width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#img-central{
+		width: 100%;
+		margin: 0;
+		background-color: #82c3a6;
+		text-align: center;
+	}
+
+	#img-secundaria{
+		background-color:  #d5c75f;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	#img-central img{
+		margin: 15px;
+		border: 2px solid black;
+	}
+
+	#img-secundaria img{
+		margin: 0px;
+		border: 2px solid black;
+	}
+
+	.img-paisajes:hover{
+		transform: rotate(10deg);
+		border: 2px solid black;
+		box-shadow: 2px 2px #82c3a6;
+	}
+
+	.img-retratos:hover{
+		transform: translate(50px, 5px);
+		border: 2px solid black;
+		box-shadow: 2px 2px #82c3a6;
+	}
+
+	.img-paisajes{
+		width: 60%;
+	}
+
+	.img-retratos{
+		width: 60%;
+	}
+
+	footer{
+		background-color: #C6d5c5;
+		border-radius: 0 0 10px 10px;
+		max-width: 100%;
+		text-align: center;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	footer #contacto{
+		width: 100%;
+		margin: 5px;
+	}
+
+	footer #terminos{
+		width: 100%;
+		margin: 5px;
+	}
+
+	footer #redes{
+		width: 100%;
+		margin: 5px;
+	}
+
+	footer #derechos{
+		width: 100%;
+		margin: 5px;
+	}
+
+	#redes ul{
+		list-style-position: inside;
+		vertical-align: bottom;
+	}
+
+	#redes #facebook{
+		list-style-image: url('../img/facebook.png');
+	}
+
+	#redes #twitter{
+		list-style-image: url('../img/twitter.png');
+	}
+
+	#redes #instagram{
+		list-style-image: url('../img/instagram.png');
+	}
+
+	/* PAISAJES */
+	
+	#contenedor-img-paisajesretratos{
+		background-color:  #d5c75f;
+		max-width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 25px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#img-paisajes-retratos img{
+		width: 100%;
+	}
+
+	#img-paisajes-retratos img:nth-child(1){
+		-webkit-filter: blur(10px);
+	}
+
+	#img-paisajes-retratos img:nth-child(2){
+		-webkit-filter: grayscale(100%);
+	}
+
+	#img-paisajes-retratos img:nth-child(3){
+		-webkit-filter: sepia(90%);
+	}
+
+	#img-paisajes-retratos img:nth-child(4){
+		-webkit-filter: grayscale(100%);
+	}
+
+	#img-paisajes-retratos img:nth-child(6){
+		-webkit-filter: grayscale(100%);
+	}
+}
+
+
+
+
+
